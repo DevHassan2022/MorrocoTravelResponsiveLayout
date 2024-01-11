@@ -1,0 +1,239 @@
+body {
+    color: #2b283a; 
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* ----- TYPOGRAPHY ----- */
+
+h1, 
+h3 {
+    margin: 0;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 1.75rem;
+}
+
+h2 {
+    color: #283461;
+    font-size: 1.375rem;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.subheading {
+    display: block;
+    font-size: 1rem;
+    color: whitesmoke;
+}
+
+.section-two h2 {
+    color: inherit;
+}
+
+/* ----- LINKS ----- */
+
+a {
+    color: #ef5839;
+    text-decoration: underline dotted; 
+}
+
+a:hover, 
+a:active {
+    color: #d4b44c;
+}
+
+.btn {
+    font-size: 1.125rem;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+    border-radius: 4.6px;
+}
+
+.btn-dark {
+    color: whitesmoke;
+    background: #283461;
+}
+
+.btn-mid {
+    color: #283461; 
+    background: #f0e0ff; 
+}
+
+
+.btn-light {
+    color: #283461; 
+    background: whitesmoke;
+}
+
+.btn:hover, 
+.btn:active {
+    color: #2b283a;
+    background-color: #f3e885;
+}
+
+/* ----- LAYOUT ----- */
+
+.section-one,
+footer {
+    background: url(https://img.freepik.com/free-vector/abstract-ornamental-flowers-background_52683-29720.jpg?w=740&t=st=1704989474~exp=1704990074~hmac=6f08a4cb9c5b199b2ebd8c04e9a48d0a6984c5544a724ecdf55409d85483097e);
+    background-color: white;
+}
+
+header, 
+.section-two {
+    background-image: url(https://img.freepik.com/free-vector/seamless-moroccan-pattern-background_1284-3363.jpg?w=740&t=st=1704988508~exp=1704989108~hmac=9d65bf9325a9501f799066d3eb5798c64f0acea626da1a4398843ebbd75b440f);
+    background-color: #283461;
+}
+
+header, 
+section, 
+footer {
+    padding: 1.25em 0;
+}
+
+
+.section-two {
+    color: whitesmoke;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-image {
+    width: 100%;
+    max-height: 515px;
+    object-fit: cover;
+    display: block;
+    max-width: 640px;
+    margin: 0 auto 2em;
+}
+
+.section-two-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.feature-image {
+    width: 100%;
+    min-height: 75%;
+    border-radius: 4.6px;
+}
+
+.feature-item {
+    flex: 1 260px;
+}
+
+footer {
+    text-align: center;
+    color: #283461;
+}
+
+
+/* ----- NAVIGATION ----- */
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+    padding: 0.85em 0;
+    display: block;
+}
+
+.section-one h3,
+.section-one p {
+    background-color: #D7D7D9;
+    width: fit-content;
+    padding: .5em;
+    border-radius: 4px;
+}
+
+.section-one h3:hover,
+.section-one p:hover,
+.section-one h3:focus,
+.section-one p:focus {
+    color: #D7D7D9;
+    background-color: #2b283a;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (max-width: 767px) {
+    header {
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 1.5em;
+    }
+ 
+    li:not(:last-child) {
+        border-bottom: 1px dotted #a190b6;
+    }  
+}
+
+@media (min-width: 768px) {
+    header,
+    section,
+    footer {
+        padding: 2.875em 0;        
+    }
+    
+    header .container,
+    nav ul {
+        display: flex;
+    }
+    
+    header .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav li {
+        margin-left: 1.25em;
+    }
+    
+    .btn {
+        display: inline-block;
+        margin-right: 0.5em;
+    }
+    
+    h1 {
+        font-size: 2.25rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    .subheading {
+        font-size: 1.25rem;
+    }
+    
+    p {
+        font-size: 1.125rem;
+    }
+}
